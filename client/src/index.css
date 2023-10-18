@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins' !important;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.card.post {
+  outline: none !important;
+  border: none !important;
+  width: fit-content;
+  box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+-webkit-box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+-moz-box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+}
+.comment-wrap {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.comments .content-text {
+  margin-left: 15px;
+}
+.card.comments {
+  outline: none !important;
+  border: none !important;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+-webkit-box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+-moz-box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+}
+.post .captionEdit {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.6) !important;
+  outline: none !important;
+  border-radius: 10px;
+  padding: 8px;
+}
+.post .btn {
+  border: none !important;
+  outline: none !important;
+  font-size: 14px;
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  width: 45%;
+  transition: .3s transform ease;
+}
+.post .btn:hover {
+  transform: translateY(-2px);
+}
+.post .btn.update {
+  background: #DE8F5F;
+  font-weight: bold;
+}
+.post .content {
+  max-height: 400px;
+}
+.post .btn.cancel {
+  color: black;
+  background: none !important;
+  border: 2px solid #DE8F5F !important;
+  font-weight: bold;
+}
+.lihatKomen {
+  color: rgba(0,0,0,.6);
+}
+.App.conntainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.likeButton svg, .commentButton svg, .username, svg.saveButton, .post .lihatKomen {
+  position: relative;
+  cursor: pointer;
+}
+.editSave {
+  position: relative;
+}
+.likeButton svg.unliked {
+  margin-top: 2px;
+}
+.commentButton svg {
+  margin-left: 5px;
+}
+svg.saveButton {
+  margin-top: 3px;
+  margin-left: 7px;
+}
+.submitComment .commentForm {
+  width: 75%;
+  height: 50px;
+  width: 90%;
+  border: 1px solid rgba(0,0,0,.2) !important;
+  outline: none !important;
+  border-radius: 40px;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: white;
+  box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+-webkit-box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+-moz-box-shadow: 1px 18px 36px -9px rgba(24,51,100,0.2);
+}
+.submitComment .commentBtn {
+  background-color: #072541;
+  color: white;
+  font-size: 50px;
+  width: 70px;
+  border: none !important;
+  outline: none !important;
+  font-size: 14px;
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: .3s transform ease;
+  border-radius: 10px;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
