@@ -35,7 +35,7 @@ Run client side server
 
 `python app.py`
 
-Now you can access the app in http://localhost:3000/
+Now you can access the app in http://localhost:3000/ or you can also perform the API directly to http://localhost:5000/
 
 
 ## API Documentation
