@@ -117,7 +117,7 @@ const UploadPage = () => {
             <div>
               {content.type.includes('image') ? (
                 <img
-                  style={{ width: '300px', height: '300px' }}
+                  style={{ width: '100%', height: '300px' }}
                   src={URL.createObjectURL(content)}
                   alt="Selected"
                 />
@@ -129,11 +129,12 @@ const UploadPage = () => {
               )}
             </div>
           ) : (
-            <div style={{ width: '300px', height: '300px', background: 'grey' }} />
+            <div style={{ width: '100%', height: '300px', background: 'grey' }} />
           )}
           <form onSubmit={handleSubmit}>
             <div>
               <input
+                className="fileUploadPost"
                 type="file"
                 id="contentUpload"
                 accept="image/*,video/*"
@@ -143,13 +144,15 @@ const UploadPage = () => {
             <div>
               <input
                 type="text"
+                placeholder="Caption..."
                 id="caption"
+                className="uploadCaption"
                 value={caption}
                 onChange={handleCaptionChange}
               />
             </div>
             <div>
-              <button type="submit">Submit</button>
+              <button className="submitUpload" type="submit">Submit</button>
             </div>
           </form>
           {message}

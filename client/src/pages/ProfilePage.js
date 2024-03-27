@@ -74,10 +74,10 @@ const ProfilePage = () => {
               <img
                 src={profileData.profile_photo}
                 alt="Profile Picture"
-                className="rounded-circle img-fluid"
+                className="rounded-circle img-fluid profilephoto"
               />
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8 profileData">
               <div className="d-flex justify-content-between ">
                 <div>
                   <h2>{profileData.username}</h2>
@@ -92,8 +92,8 @@ const ProfilePage = () => {
                   <strong>{followings.length}</strong> following
                 </div>
               </div>
-              <button className="btn btn-secondary" onClick={toUpdate}>Edit profile</button>
-              <div className="d-flex">
+              <button className="btn btn-secondary editProfile" onClick={toUpdate}>Edit profile</button>
+              <div className="d-flex savedLiked">
               <button className="btn btn-secondary" onClick={() => window.location.href="/liked"}>Disukai</button>
               <button className="btn btn-secondary" onClick={() => window.location.href="/saved"}>Disimpan</button>
               </div>

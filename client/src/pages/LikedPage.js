@@ -58,9 +58,17 @@ class LikedPage extends Component {
     render() {
         return (
             <div>
-                <div className="row">
-                    <div className="col-6 text-white bg-secondary" onClick={() => this.changeTabs("posts")}>Posts</div>
-                    <div className="col-6 text-white bg-secondary" onClick={() => this.changeTabs("comments")}>Comments</div>
+                <div className="row exploreTabContainer">
+                    <div className="col-6" onClick={() => this.changeTabs("posts")}>
+                    <div className="exploreTab">
+                            Posts
+                        </div>
+                    </div>
+                    <div className="col-6" onClick={() => this.changeTabs("comments")}>
+                    <div className="exploreTab">
+                            Comments
+                        </div>
+                    </div>
                 </div>
                 {this.state.logged === true ? (
                     this.state.tabs === "posts" ? (

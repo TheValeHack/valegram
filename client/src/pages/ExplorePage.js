@@ -97,11 +97,19 @@ class ExplorePage extends Component {
         return (
             <div>
                 <div>
-                    <input type="text" placeholder="Search..." value={this.state.query} name="query" onChange={this.searchData}></input>
+                    <input class="searchExplore" type="text" placeholder="Search..." value={this.state.query} name="query" onChange={this.searchData}></input>
                 </div>
-                <div className="row">
-                    <div className="col-6 text-white bg-secondary" onClick={() => this.changeTabs("posts")}>Posts</div>
-                    <div className="col-6 text-white bg-secondary" onClick={() => this.changeTabs("users")}>Users</div>
+                <div className="row exploreTabContainer">
+                    <div className="col-6" onClick={() => this.changeTabs("posts")}>
+                        <div className="exploreTab">
+                            Posts
+                        </div>
+                    </div>
+                    <div className="col-6" onClick={() => this.changeTabs("users")}>
+                        <div className="exploreTab">
+                            Users
+                        </div>
+                    </div>
                 </div>
                 {this.state.logged === true ? (
                     this.state.tabs === "posts" ? (

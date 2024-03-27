@@ -10,15 +10,16 @@ const MiniUser = (props) => {
         onClick={clickUser} 
         style={{
             "width": "100%",
-            "height": "100px",
-            "background": "grey",
-            "marginTop": "20px"
+            "marginTop": "20px",
+            "padding": "10px 0",
+            "border-bottom": "1px solid rgba(0, 0, 0, .4)",
+            "cursor": "pointer"
         }}>
-           <div className="col-4">
+           <div className="col-2">
             <img src={props.profile_photo} width="50px" height="50px" style={{"borderRadius":"50%"}} />
            </div>
-           <div className="col-8">
-            {props.username}
+           <div className="col-10 d-flex align-items-center">
+            <b>{props.username}</b>
            </div>
         </div>
     )
